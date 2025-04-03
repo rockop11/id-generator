@@ -2,6 +2,7 @@
  * Verificar que tenga 36 caracteres.
  * Verificar que el formato sea 8-4-4-4-12
  * Verificar que tenga 32 caracteres hexadecimales
+ * Verificar que genere IDs diferentes
  */
 
 import { generateUUID } from "../generate-uuid"
@@ -33,5 +34,11 @@ describe("check uuuid generator", () => {
 
         expect(joinedId).toHaveLength(32);
         expect(hexRegex.test(joinedId)).toBe(true);
+    })
+
+    it("should generate differents ids", () => {
+        const newRandomId = generateUUID()
+
+        expect(newRandomId).not.toBe(randomId)
     })
 })
