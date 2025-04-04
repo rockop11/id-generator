@@ -1,12 +1,12 @@
 {
   "name": "rp11-id-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "typings": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-first-library.js",
-      "require": "./dist/my-first-library.umd.cjs"
+      "import": "./dist/rp11-id-generator.js",
+      "require": "./dist/rp11-id-generator.umd.cjs"
     }
   },
   "files": [
