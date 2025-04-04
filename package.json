@@ -13,7 +13,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "htts://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "dev": "vite",
