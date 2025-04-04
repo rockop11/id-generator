@@ -1,6 +1,6 @@
 {
   "name": "id-generator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "typings": "./dist/index.d.ts",
   "exports": {
