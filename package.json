@@ -6,7 +6,8 @@
   "exports": {
     ".": {
       "import": "./dist/rp11-id-generator.js",
-      "require": "./dist/rp11-id-generator.umd.cjs"
+      "require": "./dist/rp11-id-generator.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
