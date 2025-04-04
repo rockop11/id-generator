@@ -1,5 +1,5 @@
 {
-  "name": "id-generator",
+  "name": "rp11-id-generator",
   "version": "1.0.0",
   "type": "module",
   "typings": "./dist/index.d.ts",

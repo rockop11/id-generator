@@ -9,7 +9,7 @@ Perfect for generating user IDs, product tags, or any uniquely structured identi
 
 ## Installation
 ```bash
-npm install id-generator
+npm install rp11-id-generator
 ```
 
 
@@ -18,7 +18,7 @@ npm install id-generator
 ### Generate a UUID
 
 ```ts
-import { generateUUID } from "id-generator";
+import { generateUUID } from "rp11-id-generator";
 
 const id = generateUUID();
 // Example: "550e8400-e29b-41d4-a716-446655440000"
@@ -26,7 +26,7 @@ const id = generateUUID();
 
 ### Generate a NanoID 
 ```ts
-import { generateNanoId } from "id-generator";
+import { generateNanoId } from "rp11-id-generator";
 
 // With default size (12 characters)
 const id = generateNanoId();
@@ -39,7 +39,7 @@ const customSizedId = generateNanoId(20);
 
 ### Generate a CustomId
 ```ts
-import { generateCustomId } from "id-generator";
+import { generateCustomId } from "rp11-id-generator";
 
 const id = generateCustomId({
   prefix: "user",
