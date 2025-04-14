@@ -1,10 +1,3 @@
-/**
- * Verificar que tenga 12 caracteres si no recibe parametro.
- * verificar que crea un id, con la cantidad que recibe por parametro
- * Verificar que genere IDs diferentes
- * Verificar el error si es menor a 8.
- */
-
 import { generateNanoId } from "../generate-nanoid";
 
 describe("Nano ID Generator", () => {
@@ -16,7 +9,6 @@ describe("Nano ID Generator", () => {
 
     it("should create an id with params quantity", () => {
         const quantityNanoId = generateNanoId(8)
-
         expect(quantityNanoId).toHaveLength(8)
     })
 
