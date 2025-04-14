@@ -5,16 +5,17 @@ export interface CustomIdProps {
 }
 
 /**
- * Genera un identificador personalizado con un bloque aleatorio entre un prefijo y un sufijo.
+ * Generates a custom identifier with a random block between a prefix and a suffix.
  *
- * @param {Object} params - Parámetros para generar el ID.
- * @param {string} params.prefix - Prefijo que se antepone al bloque aleatorio. Obligatorio.
- * @param {number} params.length - Longitud del bloque aleatorio a generar. Debe ser mayor a 0.
- * @param {string} params.suffix - Sufijo que se agrega al final del ID. Obligatorio.
- * @returns {string} Un ID con el formato `<prefix>-<randomBlock>-<suffix>`.
+ * @param {Object} params - Parameters for generating the ID.
+ * @param {string} params.prefix - Prefix to prepend to the random block. Required.
+ * @param {number} params.length - Length of the random block to generate. Must be greater than 0.
+ * @param {string} params.suffix - Suffix to append to the end of the ID. Required.
+ * @returns {string} An ID in the format `<prefix>-<randomBlock>-<suffix>`.
  *
- * @throws {Error} Lanza un error si no se proporciona el prefix, el suffix o si el length es inválido.
+ * @throws {Error} Throws an error if the prefix, suffix, or length are invalid or missing.
  */
+
 
 export function generateCustomId({ prefix, length, suffix }: CustomIdProps): string {
 
