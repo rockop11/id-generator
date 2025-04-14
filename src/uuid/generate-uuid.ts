@@ -1,7 +1,7 @@
 /**
- * Genera un identificador único universal (UUID v4).
+ * Generates a universally unique identifier (UUID v4).
  *
- * @returns {string} Un UUID v4 en formato estándar.
+ * @returns {string} A UUID v4 in standard format.
  *
  * @example
  * const uuid = generateUUID();

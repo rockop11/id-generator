@@ -1,10 +1,3 @@
-/**
- * Verificar que tenga 36 caracteres.
- * Verificar que el formato sea 8-4-4-4-12
- * Verificar que tenga 32 caracteres hexadecimales
- * Verificar que genere IDs diferentes
- */
-
 import { generateUUID } from "../generate-uuid"
 
 describe("check uuuid generator", () => {
@@ -16,8 +9,7 @@ describe("check uuuid generator", () => {
         expect(randomId).toHaveLength(36)
     })
 
-    it("generateUUID should follow UUID v4 format (8-4-4-4-12)", () => {   
-        // Expresión regular para un UUID estándar con guiones en formato 8-4-4-4-12
+    it("generateUUID should follow UUID v4 format (8-4-4-4-12)", () => {
         const uuidRegex = /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i;
       
         const hyphens = (randomId.match(/-/g) || []).length;
