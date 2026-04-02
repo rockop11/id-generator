@@ -5,6 +5,7 @@
   "main": "./dist/rp11-id-generator.umd.cjs",
   "module": "./dist/rp11-id-generator.js",
   "types": "./dist/index.d.ts",
+  "license": "MIT",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
