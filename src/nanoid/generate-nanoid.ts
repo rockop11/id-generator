@@ -10,7 +10,7 @@ import { nanoid } from 'nanoid'
 
 export function generateNanoId(size: number = 12): string {
     if (size < 8) {
-        throw new Error('El tamaño mínimo para Nano ID es 8 caracteres.');
+        throw new Error('The minimum size for Nano ID is 8 characters.');
     }
     return nanoid(size);
 }

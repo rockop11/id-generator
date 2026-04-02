@@ -18,6 +18,6 @@ describe("Nano ID Generator", () => {
     });
 
     it("should return error if size < 8", () => {
-        expect(() => generateNanoId(7)).toThrow("El tamaño mínimo para Nano ID es 8 caracteres.")
+        expect(() => generateNanoId(7)).toThrow("The minimum size for Nano ID is 8 characters.")
     })
 })
